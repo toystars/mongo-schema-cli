@@ -31,7 +31,7 @@ $ npm install -g mongo-schema-cli
 
 
 ## Usage
-There are three commands available: `lindaikeji top`, `lindaikeji read`, `lindaikeji open`.
+There are four commands available: `mongogen keys`, `mongogen schema`, `mongogen used` and `mongogen stats`.
 
 #### keys command
 `$ mongogen keys mongodb://localhost:27017/sample -c users`
