@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "commander": "^2.9.0",
-    "mongo-schema-gen": "0.0.2"
+    "mongo-schema-gen": "latest"
   }
 }
