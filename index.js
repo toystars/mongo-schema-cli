@@ -12,6 +12,7 @@
 var Program = require('commander'),
   path = require('path'),
   pkg = require(path.join(__dirname, 'package.json')),
+  inspector = require('util'),
   Util = require('./util/util');
 
 
@@ -43,7 +44,7 @@ Program
       console.log('Collection Name must be supplied...');
     } else {
       Util.getSchema(mongoUrl, options.collection, function (schema) {
-        console.log(schema);
+        console.log(inspector.inspect(schema, {showHidden: false, depth: null}));
       });
     }
   });
@@ -73,8 +74,8 @@ Program
     if (!options.collection) {
       console.log('Collection Name must be supplied...');
     } else {
-      Util.stats(mongoUrl, options.collection, function (boolean) {
-        console.log(boolean);
+      Util.stats(mongoUrl, options.collection, function (stat) {
+        console.log(inspector.inspect(stat, {showHidden: false, depth: null}));
       });
     }
   });
