@@ -4,6 +4,10 @@
 
 Utility command line tool for MongoDB collections queries. Based on [mongo-schema-gen](https://github.com/toystars/mongo-schema-gen)
 
+![schema](https://cloud.githubusercontent.com/assets/16062709/18309749/c612210c-74f2-11e6-823f-bd736341b0b4.png)
+![keys](https://cloud.githubusercontent.com/assets/16062709/18309748/c5eeca4a-74f2-11e6-8e10-91c226831df3.png)
+
+
 ## Installation
 
 ``` bash
